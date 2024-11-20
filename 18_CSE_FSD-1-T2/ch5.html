@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .d1 p{
+            display:inline;
+            height: 100%;
+            
+            width: 30px;
+            border: 1px solid rgb(0, 0, 0);
+        }
+        .d2 span{
+            display: block;
+            height: 100%;
+            width: 30px;
+
+        }   
+        .d3 p{
+            display: inline-block;
+            height: 100%;
+            width: 30px;
+        }
+        .d3.A{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="d1" >
+        <p>Inline Elements</p>
+        <p> Height and Width cannot be applied</p>
+    </div>
+    <div class="d2">
+        <p>Display Block</p>
+        <span>this is inline element but here e applied display property value block</span>
+        <p> Hello</p>
+    </div>
+    <div class="d3">
+        <p>Inline block</p>
+        <p>Inline level block Elements</p>
+        <p class="A"> Height and Width cannot be applied</p>
+    </div>
+</body>
+</html>

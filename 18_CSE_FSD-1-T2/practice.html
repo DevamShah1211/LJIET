@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .f1 {
+            border: 5px solid red;
+            border-radius: 20px;
+            padding: 20px;
+            width: 200px;
+            height: 250px;
+            background-color: pink;
+            cursor: pointer; /* Change cursor to pointer */
+        }
+        .f2 {
+            border: 2px solid;
+            border-radius: 50%;
+            width: 300px;
+            height: 300px;
+            cursor: pointer; /* Change cursor to pointer */
+        }
+        .d1 {
+            border-top-right-radius: 50px;
+            border-bottom-left-radius: 50px;
+            border: 5px solid;
+            padding: 50px;
+        }
+        /* Modal styles */
+        .modal {
+            display: none; /* Hidden by default */
+            position: fixed; /* Stay in place */
+            z-index: 1000; /* Sit on top */
+            left: 0;
+            top: 0;
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            overflow: auto; /* Enable scroll if needed */
+            background-color: rgba(0, 0, 0, 0.8); /* Black w/ opacity */
+        }
+        .modal-content {
+            margin: auto;
+            display: block;
+            width: 80%; /* Responsive width */
+            max-width: 700px; /* Maximum width */
+        }
+        .close {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            color: white;
+            font-size: 40px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <img src="nat.jpeg" class="f1" alt="Description of nat.jpeg" onclick="openModal(this)">
+    <img src="nat1.jpg" class="f2" alt="Description of nat1.jpg" onclick="openModal(this)">
+   
+    <div class="d1">Hello Good Morning</div>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="img01">
+    </div>
+
+    <script>
+        function openModal(img) {
+            const modal = document.getElementById("myModal");
+            const modalImg = document.getElementById("img01");
+            modal.style.display = "block";
+            modalImg.src = img.src; // Set the source of the modal image to the clicked image
+        }
+
+        function closeModal() {
+            const modal = document.getElementById("myModal");
+            modal.style.display = "none"; // Hide the modal
+        }
+
+        // Close the modal when clicking anywhere outside of the image
+        window.onclick = function(event) {
+            const modal = document.getElementById("myModal");
+            if (event.target === modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

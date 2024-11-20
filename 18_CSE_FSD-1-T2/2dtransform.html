@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .d1{
+            height: 100px;
+            width: 150px;
+            background-color: yellow;
+            border: 2px solid;
+            padding: 10px;
+        }
+        .d1:hover{
+            transform: translate(50px,100px);
+        }
+        .f1:hover{
+            transform: translateX(50px);
+            transform: translateY(100px);
+        }
+        /* .f3{
+            border: 2px solid;
+            border-radius: 50%;
+        } */
+        .f3:hover{
+            transform: rotate(20000000000deg);
+            transition: 200s;
+        }
+        .f4:hover{
+            transform: rotate(-40000000000000deg);
+            transition: 100s;
+        }
+        .f2:hover{
+            transform: translateX(50px);
+            transform: translateY(100px);
+        }
+        img{
+            width: 400px;
+            height: 400px;
+        }
+    </style>
+</head>
+<body>
+    <img src="nat1.jpg" class="f1">
+    <img src="nat.jpeg" class="f2">
+    <img src="35fff77feb98657bcb0b3c858127fa73.jpg" class="f3">
+    <img src="nat.jpeg" class="f4">
+    
+    <div class="d1">
+        Hello World
+    </div>
+</body>
+</html>
