@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .d{
+            animation-name: ex;
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            animation-duration: 1s;
+            animation-delay: 1ms;
+            animation-iteration-count: infinite;
+            position: absolute;
+            animation-direction: reverse;
+
+
+        }
+        @keyframes ex{
+           
+            0%{background-color: blue;top: 0px;left: 0px;}
+            25%{background-color: green; top:0px;left: 200px;}
+            50%{background-color: rgb(255, 85, 0); top:200px;left: 200px;}
+            75%{background-color: yellow; top:200px;left: 0px;}
+            100%{background-color: rgb(239, 6, 177); top:0px;left: 0px;}
+
+        }
+    </style>
+</head>
+<body>
+    <div class="d"></div>
+    
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            --b:#1234EE;
+            --all:solid dotted dashed double;
+            --b1:3px solid red;
+        }
+        p{
+            --b:brown;
+            color:var(--b);
+            border-style:var(--all);
+            border-width: 10px;
+            padding: 20px;
+            --c:center;
+        }
+        h1{
+            color:var(--b);
+            text-align: var(--c);
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur, suscipit quaerat maiores necessitatibus vitae rerum provident quasi dicta. Rerum eos in alias voluptatem similique non fuga quisquam dolorum expedita nam?</p>
+</html>

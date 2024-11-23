@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .d{
+            display:inline-block;
+        }
+        .d a{
+            color: red;
+            text-decoration: dotted;
+            padding: 10px 20px;
+            font-size: 20px;
+            background-color: blue;
+            border: 1px solid black;
+            border-radius: 1px ;    
+            margin: 5px;
+            float: left;
+        }
+        .d a.active{
+            color: rgb(255, 0, 0);
+            background-color: yellow;
+            border: 5px double yellow;
+            
+        }
+        .d a:hover:not(.active){
+            color: rgb(255, 0, 0);
+            background-color: rgb(0, 0, 0);
+            padding: 25px;
+            border-radius: 20px;
+            transform:rotate(360000000000000deg);    
+            transition: 200s;                 
+        }
+
+    </style>
+</head>
+<body>
+    <div class="d">
+        <a href="animation.html" class="d1">&laquo</a>
+        <a href="animation1.html">1</a>
+        <a href="animation2.html" >2</a>
+        <a href="nat1.jpg" class="hover">3</a>
+        <a href="/18_CSE_FSD-1-T2/2dtransform.html">4</a>
+        <a href="/18_CSE_FSD-1-T2/lineargradient.html" class="d1">&raquo</a>
+
+    </div>
+</body>
+</html>
