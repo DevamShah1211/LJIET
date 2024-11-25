@@ -1,0 +1,69 @@
+<!-- Write down HTML/CSS code that shows a menu that will float to the right
+of the page if the viewport is 380 pixels wide or wider (if the viewport is less
+than 380 pixels, the menu will be on top of the content) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: lightcoral;
+            color: white;
+        }
+        /* .menue:hover{
+            background-color: aqua;
+            font-size: 100%;
+            color: black;
+        } */
+         img{
+            max-width: 100%;
+            height: auto;
+         }
+        ul li{
+            text-align: right;
+            list-style: none;
+            /* padding: 10px; */
+            display: block;
+            float: right;
+            /* width: 1400px;
+            height: 20px; */
+            background-color: lightgrey;
+        }
+        ul li a{text-decoration: none;}
+        .i1{
+                display: none;
+            }
+        @media (max-width:650px){
+            ul li{
+                float: none;
+                text-align: center;
+            }
+            .i2{
+                display:none;
+            }
+            .i1{
+                display: block;
+            }
+           
+        }
+    </style>
+</head>
+<body>
+    <div class="d">
+        <nav class="menue">
+            <ul type="none">
+
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Services</a></li> 
+                <li><a href="#">Contact Us</a></li>
+            </ul><br>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis ipsam distinctio eum cum in maxime commodi accusantium. Molestiae dolore expedita illo, cum molestias dolorum aut, dicta rerum cupiditate quasi vel!</p>
+            <img class="i1" src="nat1.jpg">
+            <img class="i2" src="nat.jpeg">
+        </nav>
+    </div>
+</body>
+</html>
