@@ -1,0 +1,111 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000; /* Black background */
+}
+
+header {
+    background: #FFD700; /* Yellow background for header */
+    color: #000; /* Black text */
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #FFD700; /* Yellow text for links */
+    text-decoration: none;
+}
+
+h1, h2, h3 {
+    margin: 20px 0;
+}
+
+.hero {
+    background: url('blue-29031725625957138.webp') no-repeat center center/cover;
+    color: white;
+    padding: 100px 0;
+}
+
+.vehicles {
+    margin: 20px 0;
+}
+
+.card {
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #FFD700; /* Yellow footer */
+    color: #000; /* Black text */
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.btn-warning {
+    background-color: #FFD700; /* Yellow button */
+    border: none;
+    color: #000; /* Black text */
+}
+
+.btn-warning:hover {
+    background-color: #FFC107; /* Darker yellow on hover */
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.2s;
+}
+
+img:hover {
+    transform: scale(1.05);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: auto;
+}
+
+form label {
+    margin: 10px 0 5px;
+}
+
+form input, form textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px;
+    background: #FFD700; /* Yellow button */
+    color: #000; /* Black text */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #FFC107; /* Darker yellow on hover */
+}
