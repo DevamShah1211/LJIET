@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function vowel(e){
+            var char = e.key;
+            var vowels = ['a', 'e', 'i', 'o', 'u'];
+            console.log(char);
+            if(vowels.includes(char)){
+                console.log(vowels)
+                alert(char + " is a vowel.");
+            } else {
+                alert(char + " is a consonent.");
+            }
+        }
+    </script>
+</head>
+<body onkeypress="vowel(event)">
+</body>
+</html>

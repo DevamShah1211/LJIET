@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+       // var d1=new Date();
+        //console.log(d1);
+        //console.log(d1.getDay());
+        //console.log(d1.getMonth());
+        //console.log(d1.getFullYear());
+        //console.log(d1.getHours());
+        //console.log(d1.getMinutes());
+        //console.log(d1.getSeconds());
+        //console.log(d1.getTime());
+        function days(date1,date2){
+            var od=24*60*60*1000;
+            var d1_ms=date1.getTime();
+            var d2_ms=date2.getTime();
+            var diff=Math.abs(d1_ms-d2_ms);
+            return (Math.round(diff/od));
+        }
+        function display(){
+            var d=prompt("Enter Date:");
+            var m=prompt("Enter Month:");
+            var y=prompt("Enter Year:");
+            var d1= new Date();
+            var d2=new Date();
+            d1.setDate(d);
+            d1.setMonth(m);
+            var cy= d2.getFullYear();
+            if(y>=cy){
+                d1.setFullYear(y);
+            }
+            else{
+                alert("Invalid Year");
+            }
+            document.write(days(d1,d2));
+        }
+    </script>
+</head>
+<body>
+    <button onclick="display();">Calculate Date</button>
+</body>
+</html>
