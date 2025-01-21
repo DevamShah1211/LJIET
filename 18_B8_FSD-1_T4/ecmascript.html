@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function fun1() {return "hello"}
+        var fun1=()=>{return "hello"}
+        console.log(fun1());
+        fun2=(val)=>"hello${val}";
+        console.log(fun2("world"));
+        fun3=val=>"hello${val}";
+        console.log(fun2("world"));
+        fun4=(j,k)=>"$(j+k)";
+        console.log("addition=${fun4(3,2)}");
+        fun5=(j,k)=>{
+            let a=j+k;
+            return a;
+            console.log(fun5(3,2));
+        }
+    </script>
+</body>
+</html>

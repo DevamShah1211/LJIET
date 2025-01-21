@@ -1,0 +1,23 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>spread operator
+    </title>
+</head>
+
+<body style="background-color: black; color: white ">
+    <script>
+        arr1=[100,13,20,30]
+        arr2=[40,50]
+        var a=[arr1,arr2]
+        console.log(a);
+        var a1=[...arr1,...arr2]
+        console.log(...a1);
+        console.log(a1);
+        console.log(Math.min(a1));
+        console.log(Math.min(...a1));
+        console.log(a1.sort());
+    </script>
+</body>
+</html>

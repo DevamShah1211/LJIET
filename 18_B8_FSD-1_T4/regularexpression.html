@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function fun(e){
+            e.preventDefault();
+            var pat = /^[0-9]{10}$/i;  
+            var un = document.getElementById("input1").value; 
+            if (pat.test(un)) {
+                alert("valid");
+            } else {
+                alert("invalid");
+            }
+        }
+    </script>
+</head>
+<body>
+    <form onsubmit="fun(event)">
+        <input type="text" id="input1" />
+        <input type="submit" value="Submit" />
+    </form>
+</body>
+</html>

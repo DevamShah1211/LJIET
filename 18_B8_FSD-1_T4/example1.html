@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function fun(e){
+            e.preventDefault();
+            var pat = /^_|^@|^\d/i;
+            var pat1= /\W+/;  
+            var un = document.getElementById("uname").value;
+            var pass = document.getElementById("pass").value; 
+            if (un==0||pass==0) { 
+                alert("please enter value");
+            } else if (pat.test(un)) {
+                alert("Must Not start with _@\d");
+            }else if(!pat1.test(pass)) {
+                alert("Password must contain 1 special character");
+        }
+        else if(pass.length <6 || pass.length >12){
+            alert("Invalid Password");
+        }
+        else{
+            alert("welcome"+un);
+        }
+    }
+    </script>
+</head>
+<body>
+    <form onsubmit="fun(event)">
+        <input type="text" id="uname" />
+        <input type="password" value="password" id="pass" />
+        <input type="submit" value="Submit" />
+    </form>
+</body>
+</html>

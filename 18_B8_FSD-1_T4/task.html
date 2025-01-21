@@ -1,0 +1,26 @@
+<html><head>
+    <script type="text/javascript">
+    function fun(e)
+    {
+        e.preventDefault();              
+        obj2 = document.f1.t1.value;
+        document.getElementById("t1").innerHTML="Welcome " +obj2
+    }
+    function oi(e){ e.style.color = "red"; e.style.backgroundColor = "yellow";}
+    function oc(e){ e.style.color = "green"; e.style.backgroundColor = "pink"; }
+    function of(e){ e.style.color = "blue"; e.style.backgroundColor = "lightblue";}
+    function md(e){ e.style.fontSize = "30px"; e.style.textTransform = "uppercase" }
+    function mup(e){ e.style.fontSize = "50px"; e.style.textTransform = "lowercase" }
+    function mo(e){ e.style.color = "red"; e.style.textDecoration = "underline" }
+    function mout(e){ e.style.color = "blue"; e.style.textDecoration = "overline" }
+    function kd(e){ console.log(e.key) }
+    function ku(e){ console.log(e.keyCode) }
+    </script>
+    </head>
+    <body onkeydown="kd(event)" onkeyup="ku(event)">
+    <form name="f1" onsubmit="fun(event)">
+        <input type="text" value="test" name="t1" id=”i1” oninput="oi(this)" onchange="oc(this)" onfocus="of(this)"/>
+        <input type="submit"/>  
+    </form>
+    <h1 id="t1" onmousedown="md(this)" onmouseup="mup(this)" onmouseover="mo(this)" onmouseout="mout(this)"></h1>
+    </body></html>

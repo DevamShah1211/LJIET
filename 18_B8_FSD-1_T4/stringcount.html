@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function count(str,letter){
+            let c=0;
+            for (let i=0;i<str.length;i++){
+                if(str.charAt(i)==letter){
+                    c+=1
+            }
+        }
+        return c;
+    }
+console.log(count('hello','l'));
+var a=3;
+var b=a++;
+var c=++a;
+console.log(a,b,c);
+
+    </script>
+    <style>
+        .c2{
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+  <p id="p1">Hello</p>
+  <h1 class="c1">HelloWorld</h1>
+  <p class="c1">Test</p>
+  <script>
+    var d1=document.getElementById("p1");
+    d1.innerHTML="Texting Test";
+    d1.style.color="red";
+    d1.style.backgroundColor="Yellow"
+    d1.title="demo";
+    d1.setAttribute("class","c2");
+    var cn=document.getElementsByClassName("c1");
+    for(let i=0;i<cn.length;i++){
+        cn[i].style.fontSize="30px";
+        cn[i].style.textTransform="capitalize";
+        cn[i].innerHTML="this is text";
+    }
+  </script>  
+</body>
+</html>
